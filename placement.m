@@ -16,7 +16,7 @@ gamma = 0.1;
 first_bus_number = randi(33);
 bus_number = first_bus_number;
 
-for episode = 1:60000
+for episode = 1:6000
     
     num_action = epsilon_greedy(Q, bus_number, epsilon);
     casestudy.bus(bus_number, 3) = casestudy.bus(bus_number, 3) - actions(num_action);
